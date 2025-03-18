@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAASH - Digital Marketing Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>FLAASH Digital Marketing</h1>
+        <div class="menu-container">
+            <button class="enroll-btn" onclick="toggleEnrollForm()">Enroll</button>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#trends">Trends</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Enrollment Form -->
+    <div id="enrollment-form" class="enrollment-form hidden">
+        <h2>Enroll Now</h2>
+        <p>Join us and enhance your digital marketing success!</p>
+        <input type="text" id="enroll-name" placeholder="Enter Your Name" required>
+        <input type="email" id="enroll-email" placeholder="Enter Your Email" required>
+        <input type="tel" id="enroll-phone" placeholder="Enter Your Phone Number" required>
+        <button id="submit-enrollment">Submit</button>
+        <p id="success-message" class="hidden"></p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About FLAASH</h2>
+        <p><strong>FLAASH</strong> is a cutting-edge <b>digital marketing agency</b> led by <strong style="color:black;">Adithyarjun</strong>. We specialize in helping businesses build their online presence through innovative strategies, social media growth, and data-driven marketing.</p>
+        <p>At FLAASH Digital Marketing, we specialize in crafting high-impact brand campaigns that drive visibility, engagement, and conversions. Our strategic approach ensures that brands connect with the right audience across multiple digital platforms. From data-driven ad campaigns to innovative content strategies, we help businesses establish a strong digital presence. With a focus on creativity and performance, we turn ideas into results, making brands shine in the competitive digital landscape.</p>
+        <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1742284052/digital3_qpfzba.jpg" alt="About FLAASH">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>📢 Social Media Marketing</h3>
+            <p>At FLAASH Digital Marketing, we transform social media into a powerful growth engine for brands by leveraging engaging content, audience insights, and strategic ad placements. Our expertise lies in crafting campaigns that not only capture attention but also drive meaningful interactions and conversions. By blending creativity with analytics, we ensure your brand stays relevant, dynamic, and ahead of trends. Whether its boosting brand awareness or increasing customer loyalty, we make every post, story, and campaign count. </p>
+            <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1742314372/digital3_zmcag7.webp" alt="Social Media Marketing">
+            <video controls>
+                <source src="https://res.cloudinary.com/dcd6l5egh/video/upload/v1742313359/digital7_szpjei.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="service-item">
+            <h3>📈 SEO & Google Ads</h3>
+            <p>At FLAASH Digital Marketing, we optimize brands for maximum visibility and dominance on Google through cutting-edge SEO strategies and high-converting ad campaigns. Our approach ensures higher search rankings, increased organic traffic, and stronger brand authority in competitive markets. With a mix of keyword intelligence, content optimization, and data-driven ad placements, we turn searches into sales. Whether it's SEO for long-term growth or Google Ads for instant impact, we make every click count.</p>
+            <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1742313286/digital10_hca63i.jpg" alt="SEO & Google Ads">
+            <video controls>
+                <source src="https://res.cloudinary.com/dcd6l5egh/video/upload/v1742313340/digital8_ampmb1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- Latest Digital Marketing Trends -->
+    <section id="trends" class="trends">
+        <h2>Latest Digital Marketing Trends</h2>
+        <div class="trend-item">
+            <h3>🤖 AI-Driven Campaigns</h3>
+            <p>At FLAASH Digital Marketing, we harness the power of AI-driven campaigns to deliver precision-targeted marketing with real-time optimization. By leveraging machine learning, we analyze consumer behavior, predict trends, and automate personalized interactions for maximum impact. Our AI-powered strategies ensure smarter ad placements, higher engagement, and improved ROI, giving brands a competitive edge. With data-driven automation and intelligent insights, we transform marketing into a seamless, results-driven experience.</p>
+            <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1742314101/digital1_zi1vhg.jpg" alt="AI Marketing">
+        </div>
+        <div class="trend-item">
+            <h3>📺 Short-Form Video Content</h3>
+            <p>Short-form videos like Instagram Reels & YouTube Shorts dominate engagement. Brands are leveraging these formats to boost reach.</p>
+            <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1742314534/digital4_cshffj.jpg" alt="Short Video Marketing">
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Work</h2>
+        <p>At FLAASH Digital Marketing, we dont just create campaigns—we build impactful digital success stories. Our expertise lies in transforming brands with data-driven strategies, innovative storytelling, and high-converting campaigns. From boosting brand visibility to driving measurable growth, we ensure every campaign delivers real business impact. Explore our most powerful success stories and see how we turn ideas into results. </p>
+        <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1742283917/digital2_btjvrj.webp" alt="Ad Campaign">
+        <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1742285007/digital4_orhe3w.jpg" alt="Influencer Collaboration">
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="social-links">
+            <a href="mailto:flaash.india@gmail.com" class="button">📧 Email Us</a>
+            <a href="https://wa.me/919494582875" class="button">📱 WhatsApp</a>
+            <a href="https://www.instagram.com/__flaash__?igsh=MXVjNXppcTFncGtuZQ%3D%3D&utm_source=qr" target="_blank" class="button">
+                <img src="https://res.cloudinary.com/dcd6l5egh/image/upload/v1742280319/insta_svgxc3.jpg" class="social-icon" alt="Instagram Icon"> Instagram
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FLAASH Digital Marketing. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
