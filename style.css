@@ -126,6 +126,51 @@ nav a:hover {
 .hidden {
     display: none;
 }
+.hidden {
+    display: none;
+}
+
+.enrollment-form {
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+.enrollment-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#submit-enrollment {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#submit-enrollment:hover {
+    background: #0056b3;
+}
+
+#success-message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
 
 /* SECTIONS */
 section {
@@ -283,44 +328,74 @@ footer {
 }
 
 /* RESPONSIVENESS */
+/* Mobile Navigation Styling */
 @media (max-width: 768px) {
     .menu-container {
-        flex-direction: row-reverse;
-        align-items: center;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: black;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 6px rgba(255, 204, 0, 0.5);
-    }
-
-    nav ul.show {
         display: flex;
-    }
-
-    nav ul li {
-        text-align: center;
-        padding: 10px 0;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background: black;
     }
 
     .menu-toggle {
-        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        background: yellow;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
     }
 
-    .button {
-        display: block;
-        margin: 10px auto;
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        background: black;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+        z-index: 1000;
     }
 
-    .about img {
-        width: 180px;
-        height: 120px;
+    #nav-menu.show {
+        display: flex;
+    }
+
+    #nav-menu ul {
+        list-style: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    #nav-menu ul li {
+        padding: 10px 0;
+    }
+
+    #nav-menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    /* Styling for the Enroll Button Inside the Menu */
+    #nav-menu .enroll-btn {
+        background-color: yellow;
+        color: black;
+        border: none;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 80%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #nav-menu .enroll-btn:hover {
+        background-color: orange;
     }
 }
+
